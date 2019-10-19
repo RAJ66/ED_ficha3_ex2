@@ -21,17 +21,26 @@ public class Main {
         // TODO code application logic here
         // TODO code application logic here
         LinkedStack t = new LinkedStack();
-        int teste = 0;
+        int teste = 1;
         //escolher o numero do teste
         switch (teste) {
             case 0:
                 //teste de adicionar 1
                 t.push(1);
-                t.push(2);
 
                 System.out.println("Teste de  adicionar" + t.toString());
                 break;
-            case 1: {
+
+            case 1:
+                //teste de adicionar 3 elementos
+                t.push(1);
+                t.push(33);
+                t.push(66);
+
+                System.out.println("Teste de  adicionar" + t.toString());
+                break;
+
+            case 2: {
                 try {
                     // remover sem ter nada
                     t.pop();
@@ -40,19 +49,7 @@ public class Main {
                 }
             }
             break;
-            case 2:
-                //remover um item quando ele existe
-                t.push(1);
-                System.out.println("Teste de  adicionar" + t.toString());
-                 {
-                    try {
-                        t.pop();
-                        System.out.println("Teste de  remover" + t.toString());
-                    } catch (EmptyCollectionException ex) {
-                        Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                }
-                break;
+
             case 3: {
                 try {
                     //teste do peek quando o array esta vazio
@@ -103,5 +100,5 @@ public class Main {
         }
 
     }
-    
+
 }
