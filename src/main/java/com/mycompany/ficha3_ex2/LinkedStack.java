@@ -40,6 +40,7 @@ public class LinkedStack<T> implements StackADT<T> {
             LinearNode<T> current = this.head;
             this.head = this.head.getNext();
             current.setNext(null);
+            this.count--;
             return current.getElement();
         }
     }

@@ -21,7 +21,7 @@ public class Main {
         // TODO code application logic here
         // TODO code application logic here
         LinkedStack t = new LinkedStack();
-        int teste = 5;
+        int teste = 6;
         //escolher o numero do teste
         switch (teste) {
             case 0:
@@ -83,6 +83,18 @@ public class Main {
                     t.push(5);
                     System.out.println(t.peek());
                     System.out.println("Teste do peek quando tem muitos elemtento" + t.toString());
+                } catch (EmptyCollectionException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+            break;
+            case 6: {
+                try {
+                    //teste do peek quando tem muitos elemtento
+                    t.push(33);
+                    t.push(2);
+                    System.out.println(t.pop());
+                    System.out.println(t.toString());
                 } catch (EmptyCollectionException ex) {
                     Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
                 }
