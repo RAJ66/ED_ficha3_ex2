@@ -21,7 +21,7 @@ public class Main {
         // TODO code application logic here
         // TODO code application logic here
         LinkedStack t = new LinkedStack();
-        int teste = 1;
+        int teste = 5;
         //escolher o numero do teste
         switch (teste) {
             case 0:
@@ -88,14 +88,9 @@ public class Main {
                 }
             }
             break;
-            case 6: {
-                t.push(1);
-                t.push(2);
-                System.out.println(t.toString());
-                t.push(3);
-                System.out.println(t.toString());
-            }
-            break;
+            
+            
+            
 
         }
 

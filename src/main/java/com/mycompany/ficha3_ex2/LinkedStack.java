@@ -46,6 +46,9 @@ public class LinkedStack<T> implements StackADT<T> {
 
     @Override
     public T peek() throws EmptyCollectionException {
+        if (isEmpty()) {
+            throw new EmptyCollectionException("nao tem");
+        }
         return this.head.getElement();
     }
 
